@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
-@app.route('/price')
+@app.route('/price', methods=['GET'])
 def get_avg_price():
     try:
         # Fetch the HTML content
